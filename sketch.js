@@ -10,15 +10,15 @@ function setup(){
 
 //draw function loops forever 
 function draw(){
-    var diameter = random(1,250);
-    frameRate(60);
+    var diameter = random(2,250);
+    frameRate(65);
    // background(50);
    if(mouseIsPressed){
        noStroke();
     fill(random(100,255),65, 71, 244);
     triangle(mouseX,mouseY-50,mouseX-50,mouseY+50,mouseX+50,mouseY+50);
    
-    fill(random(0,255),random(0,255),random(0,255));
+    fill(random(0,255),random(0,255),random(2,255));
     ellipse(mouseX,mouseY,diameter, diameter);       
    }
    
